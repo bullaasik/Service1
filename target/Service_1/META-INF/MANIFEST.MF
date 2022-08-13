@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: bulasik
+Build-Jdk: version 11.0.15
+Implementation-Title: data_generator_module
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: bednova
+Main-Class: ${start-class}
+

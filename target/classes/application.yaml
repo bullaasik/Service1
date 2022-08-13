@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: Genertor
+    CurrencyPairs:
+      - USD/RUB: 60.4523 * resultTimeFunction + RandomValue
+      - EUR/RUB: 62.7395 * resultTimeFunction + RandomValue
+      - EUR/USD: 1.0582 * resultTimeFunction + RandomValue
+
+server:
+  port: 8082
+
+info:
+  name: "Service 1 - Generator"
+  description: "Service for generating a flow of prices for transactions of currency pairs based on a given trend"
+  author: "Julia Bednova"
+
+logstash:
+  host=@logstash:
+    host@:
+
+  port=@logstash:
+    port@:
+logger:
+  console:
+    tresholdFilter=@logger:
+      console:
+        tresholdFilter@:
+
+  socket:
+    tresholdFilter=@logger:
+      socket:
+        tresholdFilter@:
+  logger:
+    console:
+      tresholdFilter: logger.console.tresholdFilter
+    socket:
+      tresholdFilter: logger.socket.tresholdFilter
